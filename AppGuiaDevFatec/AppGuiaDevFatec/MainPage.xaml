@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGuiaDevFatec.MainPage">
+
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" Padding="5" BackgroundColor="red">
+            <StackLayout>
+                <Frame CornerRadius="10">
+                    <Label Text="Logo da Empresa" />
+                </Frame>
+
+                <Frame CornerRadius="10">
+                    <StackLayout>
+                        <Button Text="Inicial" Clicked="Button_Inicial_Clicked" />
+                        <Button Text="Banco de Dados" Clicked="Button_BancoDados_Clicked" />
+                        <Button Text="Programação Web" Clicked="Button_ProgramacaoWeb_Clicked" />
+                        <Button Text="Programação Mobile" Clicked="Button_ProgramacaoMobile_Clicked" />
+                        <Button Text="Sistemas Operacionais" Clicked="Button_SistemasOperacionais_Clicked" />
+                        <Button Text="Redes de Computadores" Clicked="Button_RedesComputadores_Clicked" />
+                        <Button Text="Contato Fatec" Clicked="Button_Contato_Clicked" />
+                    </StackLayout>
+                </Frame>           
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>

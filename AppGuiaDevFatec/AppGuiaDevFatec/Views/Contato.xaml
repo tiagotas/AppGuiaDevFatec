@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGuiaDevFatec.Views.Contato"
+             Title="Contato">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Contato"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="(19) 3656 5559" Clicked="Button_Discar_Clicked" />
+            <Button Text="Enviar E-mail" Clicked="Button_Email_Clicked" />
+            <Button Text="Chamar no WhatsApp" Clicked="Button_WhatsApp_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
