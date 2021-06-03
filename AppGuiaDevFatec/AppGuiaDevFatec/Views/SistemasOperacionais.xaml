@@ -2,12 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaDevFatec.Views.SistemasOperacionais"
-             Title="Sistemas Operacionais">
+             Title="Sistemas Operacionais"
+             BackgroundColor="#354855"
+             Padding="10">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Sistemas Operacionais"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Background="white"
+                     Padding="10">
+
+            <StackLayout VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+
+                <Label Text="Principais Tecnologias"
+                       FontSize="Title"
+                       FontAttributes="bold"
+                       TextTransform="Uppercase"/>
+                <Label FontSize="Large">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Linux" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Windows Server" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="MacOS" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="FreeBSD" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Unix" TextColor="Accent" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

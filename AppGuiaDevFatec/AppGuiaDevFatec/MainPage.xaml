@@ -5,21 +5,23 @@
 
 
     <MasterDetailPage.Master>
-        <ContentPage Title="Menu" Padding="5" BackgroundColor="red">
+        <ContentPage Title="Menu" Padding="10" BackgroundColor="#354855">
             <StackLayout>
-                <Frame CornerRadius="10">
-                    <Label Text="Logo da Empresa" />
+                <Frame CornerRadius="0" 
+                       HeightRequest="150" 
+                       Padding="0">                    
+                    <Image Source="Logo_fatec" />                                     
                 </Frame>
 
-                <Frame CornerRadius="10">
+                <Frame CornerRadius="0" Padding="5">
                     <StackLayout>
-                        <Button Text="Inicial" Clicked="Button_Inicial_Clicked" />
+                        <Button Text="Inicial" Clicked="Button_Inicial_Clicked" Style="{StaticResource botaoVermelho}" />
                         <Button Text="Banco de Dados" Clicked="Button_BancoDados_Clicked" />
                         <Button Text="Programação Web" Clicked="Button_ProgramacaoWeb_Clicked" />
                         <Button Text="Programação Mobile" Clicked="Button_ProgramacaoMobile_Clicked" />
                         <Button Text="Sistemas Operacionais" Clicked="Button_SistemasOperacionais_Clicked" />
                         <Button Text="Redes de Computadores" Clicked="Button_RedesComputadores_Clicked" />
-                        <Button Text="Contato Fatec" Clicked="Button_Contato_Clicked" />
+                        <Button Text="Contato Fatec" Clicked="Button_Contato_Clicked" Style="{StaticResource botaoVermelho}" />
                     </StackLayout>
                 </Frame>           
             </StackLayout>

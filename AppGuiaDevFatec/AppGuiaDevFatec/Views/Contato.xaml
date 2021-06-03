@@ -2,16 +2,73 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaDevFatec.Views.Contato"
-             Title="Contato">
+             Title="Contato"
+             BackgroundImageSource="foto_fatec">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>        
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Contato"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout x:Name="stk_corpo">
+            <StackLayout.BackgroundColor>
+                <Color>
+                    <x:Arguments>
+                        <x:Double>0</x:Double>
+                        <x:Double>0</x:Double>
+                        <x:Double>0</x:Double>
+                        <x:Double>0.65</x:Double>
+                    </x:Arguments>
+                </Color>
+            </StackLayout.BackgroundColor>
+           
 
-            <Button Text="(19) 3656 5559" Clicked="Button_Discar_Clicked" />
-            <Button Text="Enviar E-mail" Clicked="Button_Email_Clicked" />
-            <Button Text="Chamar no WhatsApp" Clicked="Button_WhatsApp_Clicked" />
+            <Label Margin="0, 20, 0, 0" 
+                   FontSize="Title"
+                   FontAttributes="Bold">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="FATEC "
+                              TextColor="Accent" />
+                        <Span Text="MOCOCA" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="www.fatecmococa.edu.br" />
+            <Label Text="Centro Paula Souza"
+                   FontAttributes="Bold"
+                   TextTransform="Uppercase" />
+
+            <StackLayout VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+                
+                <Label Text="Endereço:" 
+                       TextTransform="Uppercase"
+                       FontAttributes="Bold"
+                       FontSize="Large" />
+                
+                <Label Text="Av. Dr. Américo Pereira Lima s/n" FontSize="Medium" />
+                <Label Text="Jd. Lavinia - Mococa (SP)" FontSize="Medium" />
+            </StackLayout>
+
+            <StackLayout Margin="20">
+
+                <Button Text="(19) 3656 5559" Clicked="Button_Discar_Clicked" />
+                <Button Text="Enviar E-mail" Clicked="Button_Email_Clicked" />
+                <Button Text="Chamar no WhatsApp" Clicked="Button_WhatsApp_Clicked" Style="{StaticResource botaoVermelho}" />
+
+            </StackLayout>
+            
+
+
+
+
+            
 
         </StackLayout>
     </ContentPage.Content>

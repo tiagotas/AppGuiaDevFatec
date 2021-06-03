@@ -18,6 +18,8 @@ namespace AppGuiaDevFatec.Views
         public Contato()
         {
             InitializeComponent();
+
+            //stk_corpo.BackgroundColor = Color.FromRgba(0, 0, 0, 0.6);
         }
 
         private void Button_Discar_Clicked(object sender, EventArgs e)

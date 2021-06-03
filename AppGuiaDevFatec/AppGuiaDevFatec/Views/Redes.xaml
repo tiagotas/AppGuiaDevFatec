@@ -2,12 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaDevFatec.Views.Redes"
-             Title="Redes e Infra">
+             Title="Redes e Infra"
+             BackgroundColor="#354855"
+             Padding="10">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Redes e Infra"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Background="white"
+                     Padding="10">
+
+            <StackLayout VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+
+                <Label Text="Principais Tecnologias"
+                       FontSize="Title"
+                       FontAttributes="bold"
+                       TextTransform="Uppercase"/>
+                <Label FontSize="Large">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Apache" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Ngix" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Squid" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="IP" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="DNS" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="HTTP" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="SSL" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="SSH" TextColor="Accent" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

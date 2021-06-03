@@ -2,12 +2,37 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaDevFatec.Views.BancoDeDados"
-             Title="Banco de Dados">
+             Title="Banco de Dados"
+             BackgroundColor="#354855"
+             Padding="10">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Banco de Dados"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Background="white"
+                     Padding="10">
+            <StackLayout VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+
+                <Label Text="Principais Tecnologias"
+                       FontSize="Title"
+                       FontAttributes="bold"
+                       TextTransform="Uppercase"/>
+
+                <Label FontSize="Large">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Oracle" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="SQL Server" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="MySQL" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="MongoDB" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="PostgreSQL" TextColor="Accent" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

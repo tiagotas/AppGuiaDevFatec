@@ -2,12 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaDevFatec.Views.ProgramacaoWeb"
-             Title="Programação Web">
+             Title="Programação Web"
+             BackgroundColor="#354855"
+             Padding="10">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Programação Web"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Background="white"
+                     Padding="10">
+            
+            <StackLayout VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+
+                <Label Text="Principais Tecnologias"
+                       FontSize="Title"
+                       FontAttributes="bold"
+                       TextTransform="Uppercase"/>
+                <Label FontSize="Large">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="PHP" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="JavaScript" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="HTML 5" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="CSS 3" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Boostrap " TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Django " TextColor="Accent" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

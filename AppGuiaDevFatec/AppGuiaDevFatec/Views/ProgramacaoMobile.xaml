@@ -2,12 +2,40 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaDevFatec.Views.ProgramacaoMobile"
-             Title="Programação Mobile">
+             Title="Programação Mobile"
+             BackgroundColor="#354855"
+             Padding="10">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Programação Mobile"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Background="white"
+                     Padding="10">
+
+            <StackLayout VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+
+                <Label Text="Principais Tecnologias"
+                       FontSize="Title"
+                       FontAttributes="bold"
+                       TextTransform="Uppercase"/>
+                <Label FontSize="Large">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Xamarin" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Fluttler" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Native React" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Ionic" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Cordova" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="PWA" TextColor="Accent" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
+    
 </ContentPage>

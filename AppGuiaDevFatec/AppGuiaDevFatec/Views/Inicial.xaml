@@ -2,13 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaDevFatec.Views.Inicial"
-             Title="AppGuiaDev">
-    
+             Title="AppGuiaDev"
+             BackgroundColor="#354855"
+             Padding="10">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Serei a Inicial"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Background="white"
+                     Padding="10">      
+            <StackLayout VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+                
+                <Label Text="Bem-vindo ao AppGuiaDev!"
+                       FontSize="Title"
+                       FontAttributes="bold" />
+                
+                <Label Text="O objetivo deste projeto é elencar categorias indispensáveis para desenvolvedores."
+                       FontSize="Large"/>
+
+                <Label FontSize="Medium">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Separamos o conhecimento em 5 grandes áreas para você se tornar um desenvolvedor Full Stack (de verdade): " />
+                            <Span Text="Banco de Dados" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Programação Web" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Programação Mobile" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Sistemas Operacionais" TextColor="Accent" />
+                            <Span Text=", " />
+                            <Span Text="Redes de Computadores" TextColor="Accent" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                
+                
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
     
